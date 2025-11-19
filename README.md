@@ -45,12 +45,12 @@ Phase B (Sensitivity Analysis): Tuning the Learning Rate for the top-performing 
 ## Results & Analysis
 Phase A: Optimizer Performance (Fixed LR = 0.001)
 
-Optimizer	Test Accuracy	Loss	Insight
-Adam	84.76%	0.42	Optimal Convergence. Effectively adapted individual learning rates per parameter.
-SGD	14.11%	2.30	Failed to converge. Likely requires a higher LR or momentum tuning.
-RMSprop	10.00%	2.30	Stuck at random initialization baseline.
-Adagrad	10.00%	2.30	Stuck at random initialization baseline.
-Technical Note: The failure of SGD, RMSprop, and Adagrad at LR=0.001 highlights the robustness of Adam. While the other optimizers can perform well, they require extensive hyperparameter grid searching. Adam provided immediate value with default parameters.
+| Optimizer | Test Accuracy | Loss | Insight |
+| :--- | :--- | :--- | :--- |
+| **Adam** | **84.76%** | **0.42** | **Optimal Convergence.** Effectively adapted individual learning rates per parameter. |
+| **SGD** | 14.11% | 2.30 | Failed to converge. Likely requires a higher LR or momentum tuning. |
+| **RMSprop** | 10.00% | 2.30 | Stuck at random initialization baseline. |
+| **Adagrad** | 10.00% | 2.30 | Stuck at random initialization baseline. |
 
 Phase B: Learning Rate Tuning (Adam)
 
