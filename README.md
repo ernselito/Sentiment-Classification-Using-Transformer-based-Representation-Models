@@ -9,6 +9,13 @@ Without a robust foundation, deep learning model training becomes a high-cost, h
 In view of this, this project directly addresses the foundation of the training bottleneck by conducting a rigorous audit on the impact of optimization algorithms on Convolutional Neural Networks (CNNs).
 
 
+- Identified Adam as the superior optimizer, achieving ~85% accuracy and stable convergence.
+- Prevented a critical failure path by demonstrating that SGD, RMSprop, and Adagrad failed to learn (14% or 10% accuracy) under standard conditions.
+- Established a reliable baseline that reduces the compute time and cost for training new models by an estimated 60-80% by avoiding extensive grid-searches on sub-optimal optimizers.
+
+
+
+
 ## Project Objectives
 Architecture Design: Construct a scalable CNN capable of feature extraction from grayscale telemetry.
 
