@@ -1,4 +1,5 @@
-# Optimizing Compute Efficiency for Automated Visual Recognition
+# Effect of Different Optimizers on Classification
+
 ## Executive Summary
 In large-scale e-commerce and logistics operations, the deployment of reliable Computer Vision models—especially those that classify inventory images—is most often delayed by inefficient training protocols. This inefficiency manifests in two critical areas:
  - Wasted Capital: Excessive time is spent on hyperparameter tuning (grid-searching) due to utilizing a sub-optimal base training algorithm.
